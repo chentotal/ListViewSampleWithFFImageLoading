@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ViewCell
+	x:Class="ListviewTest.MyViewCell"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+	<ViewCell.View>
+		<StackLayout BackgroundColor="Black" Spacing="0">
+
+			<!--  照片  -->
+
+			<Image
+				x:Name="myImage"
+				Aspect="AspectFill"
+				Source="{Binding ImageURL}" />
+
+
+
+			<!--  名字,等級  -->
+			<StackLayout
+				Margin="0,4,0,0"
+				Orientation="Horizontal"
+				VerticalOptions="Fill">
+				<Label
+					Margin="10,0,0,0"
+					HorizontalOptions="FillAndExpand"
+					Text="Label1"
+					TextColor="White" />
+
+				<Label
+					Margin="10,0,0,0"
+					HorizontalOptions="FillAndExpand"
+					Text="Label2"
+					TextColor="White" />
+			</StackLayout>
+
+
+		</StackLayout>
+	</ViewCell.View>
+</ViewCell>
